@@ -1,0 +1,112 @@
+.red {
+    color: red;
+}
+
+.skyblue-bg {
+    background-color: skyblue;
+}
+
+.fancy {
+    font-weight: bold;
+    text-shadow: 4px 4px 3px #77f;
+}
+
+h2 {
+    color: red !important;
+}
+
+h2 {
+    color: blue;
+}
+
+.fancy {
+    font-weight: bold;
+    text-shadow: 4px 4px 3px #77f;
+}
+
+p.fancy {
+    text-shadow: 4px 4px 3px #00c8eb;
+}
+
+
+/* <a> element yang menerapkan href attribut */
+a[href] {
+    color: blue;
+}
+
+/* <a> element yang menerapkan nilai pada href dengan awalan "#" */
+a[href^="#"] {
+    background-color: gold;
+}
+
+/* <a> element yang menerapkan nilai pada href yang mengandung teks "example" */
+a[href*="example"] {
+    background-color: silver;
+}
+
+/* <a> element yang menerapkan nilai pada href yang mengandung teks "insensitive" tidak mementingkan huruf kapital*/
+a[href*="insensitive"i] {
+    color: cyan;
+}
+
+/* <a> element yang menerapkan nilai pada href dengan akhiran ".org" */
+a[href$=".org"] {
+    color: red;
+}
+
+/* Rule akan diterapkan pada elemen paragraf yang berada tepat setelah elemen img */
+img+p {
+    color: green;
+}
+
+/* Rule akan diterapkan pada elemen header yang berada tepat setelah elemen img */
+/* img~p {
+    color: red;
+} */
+
+/* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+a:link {
+    color: red;
+}
+
+/* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+a:visited {
+    color: green;
+}
+
+/* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+a:hover {
+    color: pink;
+}
+
+/* rule akan diterapkan pada sebuah tautan ketika ditekan */
+a:active {
+    color: orange;
+}
+
+blockquote::before,
+blockquote::after {
+    content: '"';
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Rule styling akan diterapkan pada karakter pertama disebuah paragraf */
+p::first-letter {
+    font-size: 32px;
+    font-weight: bold;
+    color: saddlebrown;
+}
+
+.content {
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: deeppink;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
